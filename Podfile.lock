@@ -1,0 +1,26 @@
+PODS:
+  - FileKit (4.0.0)
+  - Groot (2.0):
+    - Groot/Swift (= 2.0)
+  - Groot/Swift (2.0)
+  - IDZSwiftCommonCrypto (0.9.0)
+  - Swifter (1.3.2)
+  - SwiftyJSON (3.1.3)
+
+DEPENDENCIES:
+  - FileKit (~> 4.0.0)
+  - Groot (= 2.0)
+  - IDZSwiftCommonCrypto (~> 0.9.0)
+  - Swifter (~> 1.3.2)
+  - SwiftyJSON (= 3.1.3)
+
+SPEC CHECKSUMS:
+  FileKit: 2589d0393b3bfdc599c2ba6e41419be6db4279e0
+  Groot: 7543f84980bfb1613750818029d9b927d4378211
+  IDZSwiftCommonCrypto: 60f14492730da20117ce5875b890c7a6fc38ab8c
+  Swifter: dd1800ba8eb3e28b22b8bd20f91a8561a0110fac
+  SwiftyJSON: 38a8ea2006779c0fc4c310cb2ee8195327740faf
+
+PODFILE CHECKSUM: 999f0a9ff182cd31b23392044a420f7615d5cf9b
+
+COCOAPODS: 1.1.1

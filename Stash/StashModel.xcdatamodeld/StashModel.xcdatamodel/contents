@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16B2555" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="1">
+    <entity name="Performer" representedClassName="Performer" syncable="YES" codeGenerationType="class">
+        <attribute name="checksum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="scenes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Scene" inverseName="performers" inverseEntity="Scene" syncable="YES"/>
+        <compoundIndexes>
+            <compoundIndex>
+                <index value="name"/>
+            </compoundIndex>
+        </compoundIndexes>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="checksum"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Scene" representedClassName="Scene" syncable="YES" codeGenerationType="class">
+        <attribute name="checksum" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="checksum"/>
+            </userInfo>
+        </attribute>
+        <attribute name="details" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="path" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="path"/>
+            </userInfo>
+        </attribute>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="title"/>
+            </userInfo>
+        </attribute>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="performers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Performer" inverseName="scenes" inverseEntity="Performer" syncable="YES"/>
+        <relationship name="studio" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Studio" inverseName="scenes" inverseEntity="Studio" syncable="YES"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="scenes" inverseEntity="Tag" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="checksum"/>
+            </uniquenessConstraint>
+            <uniquenessConstraint>
+                <constraint value="path"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+        <userInfo>
+            <entry key="identityAttributes" value="checksum, path"/>
+        </userInfo>
+    </entity>
+    <entity name="Studio" representedClassName="Studio" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="scenes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Scene" inverseName="studio" inverseEntity="Scene" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="name"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Tag" representedClassName="Tag" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="scenes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Scene" inverseName="tags" inverseEntity="Scene" syncable="YES"/>
+        <compoundIndexes>
+            <compoundIndex>
+                <index value="name"/>
+            </compoundIndex>
+        </compoundIndexes>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="name"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="Performer" positionX="-36" positionY="-108" width="128" height="90"/>
+        <element name="Scene" positionX="7" positionY="-225" width="128" height="165"/>
+        <element name="Studio" positionX="-252" positionY="-63" width="128" height="90"/>
+        <element name="Tag" positionX="214" positionY="-54" width="128" height="73"/>
+    </elements>
+</model>

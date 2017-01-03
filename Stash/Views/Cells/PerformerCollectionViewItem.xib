@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PerformerCollectionViewItem" customModule="Stash" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="l4f-d6-b0u" id="Me0-bJ-CaI"/>
+                <outlet property="textField" destination="P2F-gD-qDc" id="Ifp-Yo-9tG"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="272" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l4f-d6-b0u">
+                    <rect key="frame" x="20" y="45" width="232" height="207"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSBonjour" id="Wcc-sf-pYy"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="P2F-gD-qDc">
+                    <rect key="frame" x="18" y="20" width="236" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" placeholderString="Performer Name" usesSingleLineMode="YES" id="wOt-d0-rQW">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="P2F-gD-qDc" firstAttribute="top" secondItem="l4f-d6-b0u" secondAttribute="bottom" constant="8" symbolic="YES" id="2HQ-YA-532"/>
+                <constraint firstItem="l4f-d6-b0u" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" symbolic="YES" id="NoM-YN-yU4"/>
+                <constraint firstItem="l4f-d6-b0u" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" symbolic="YES" id="P2t-Vv-RgG"/>
+                <constraint firstItem="l4f-d6-b0u" firstAttribute="leading" secondItem="P2F-gD-qDc" secondAttribute="leading" id="ZkZ-GY-TRd"/>
+                <constraint firstItem="l4f-d6-b0u" firstAttribute="trailing" secondItem="P2F-gD-qDc" secondAttribute="trailing" id="bys-bB-wRx"/>
+                <constraint firstAttribute="trailing" secondItem="l4f-d6-b0u" secondAttribute="trailing" constant="20" symbolic="YES" id="kdd-vB-ISP"/>
+                <constraint firstAttribute="bottom" secondItem="P2F-gD-qDc" secondAttribute="bottom" constant="20" symbolic="YES" id="nxf-Zw-nZi"/>
+            </constraints>
+            <point key="canvasLocation" x="35" y="168"/>
+        </customView>
+        <collectionViewItem id="7Rg-8X-vQK" customClass="PerformerCollectionViewItem" customModule="Stash" customModuleProvider="target"/>
+    </objects>
+    <resources>
+        <image name="NSBonjour" width="32" height="32"/>
+    </resources>
+</document>

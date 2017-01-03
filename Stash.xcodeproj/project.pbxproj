@@ -1,0 +1,889 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		077839153F8861C4ED2DB01E /* Pods_Stash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F95167C86952D8CBBD1491ED /* Pods_Stash.framework */; };
+		8ED0D806211DCEB3BE7B5A01 /* Pods_StashTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE57EC004BC3CB2CE221F5B9 /* Pods_StashTests.framework */; };
+		B3F22E9BD460C38269D389FB /* Pods_StashUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31B37FB602D81ADF89A5C411 /* Pods_StashUITests.framework */; };
+		FE0DF4FB1E059B8600A4CA36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0DF4FA1E059B8600A4CA36 /* AppDelegate.swift */; };
+		FE0DF4FF1E059B8600A4CA36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0DF4FE1E059B8600A4CA36 /* Assets.xcassets */; };
+		FE0DF5021E059B8600A4CA36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE0DF5001E059B8600A4CA36 /* Main.storyboard */; };
+		FE0DF50D1E059B8600A4CA36 /* StashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0DF50C1E059B8600A4CA36 /* StashTests.swift */; };
+		FE0DF5181E059B8600A4CA36 /* StashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0DF5171E059B8600A4CA36 /* StashUITests.swift */; };
+		FE0DF52A1E05A46B00A4CA36 /* FileTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0DF5291E05A46B00A4CA36 /* FileTreeNode.swift */; };
+		FE0DF5311E05FA5400A4CA36 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0DF5301E05FA5400A4CA36 /* MainWindowController.swift */; };
+		FE2374931E11ECE100864FB6 /* InputStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2374921E11ECE100864FB6 /* InputStackView.swift */; };
+		FE2BE2EA1E1322D90026EAB0 /* NSTextField+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2BE2E91E1322D90026EAB0 /* NSTextField+Helpers.swift */; };
+		FE2EBF701E150D4200EA4FB3 /* SceneTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2EBF6F1E150D4200EA4FB3 /* SceneTableCellView.swift */; };
+		FE2EBF721E150D5E00EA4FB3 /* SceneTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE2EBF711E150D5E00EA4FB3 /* SceneTableCellView.xib */; };
+		FE2EBF741E151EFA00EA4FB3 /* FFMPEG.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2EBF731E151EFA00EA4FB3 /* FFMPEG.swift */; };
+		FE37419E1E06F4CE0085EA01 /* MainContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE37419D1E06F4CE0085EA01 /* MainContainerViewController.swift */; };
+		FE3741A01E0700400085EA01 /* DirectoryOutlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE37419F1E0700400085EA01 /* DirectoryOutlineViewController.swift */; };
+		FE3741A21E070AA70085EA01 /* EditMetadataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3741A11E070AA70085EA01 /* EditMetadataViewController.swift */; };
+		FE3741A41E0760DF0085EA01 /* RefreshProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3741A31E0760DF0085EA01 /* RefreshProgressViewController.swift */; };
+		FE45BB8F1E11927800F011D4 /* SaveJSONOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE45BB8E1E11927800F011D4 /* SaveJSONOperation.swift */; };
+		FE45BB911E11CC1700F011D4 /* PerformersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE45BB901E11CC1700F011D4 /* PerformersViewController.swift */; };
+		FE45BB971E11DA9300F011D4 /* PerformerCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE45BB951E11DA9300F011D4 /* PerformerCollectionViewItem.swift */; };
+		FE45BB981E11DA9300F011D4 /* PerformerCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE45BB961E11DA9300F011D4 /* PerformerCollectionViewItem.xib */; };
+		FE45BB9A1E11E61200F011D4 /* PerformerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE45BB991E11E61200F011D4 /* PerformerViewController.swift */; };
+		FE4CA4741E0602920031275C /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4CA4731E0602920031275C /* Database.swift */; };
+		FE70B1CE1E0AFD1500639003 /* WrappingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE70B1CD1E0AFD1500639003 /* WrappingTextField.swift */; };
+		FE70B1D01E0AFE8200639003 /* WrappingTokenField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE70B1CF1E0AFE8200639003 /* WrappingTokenField.swift */; };
+		FE88576B1E0B1B0400AF77ED /* JSON+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE88576A1E0B1B0400AF77ED /* JSON+Helpers.swift */; };
+		FED89E671E0B353E00B2EE19 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED89E661E0B353E00B2EE19 /* SearchViewController.swift */; };
+		FED89E6A1E0B408400B2EE19 /* ScanOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED89E691E0B408400B2EE19 /* ScanOperation.swift */; };
+		FED89E761E0B657C00B2EE19 /* StashModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FED89E741E0B657C00B2EE19 /* StashModel.xcdatamodeld */; };
+		FEEB6C6A1E162AD100796E00 /* ImportJSONOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEB6C691E162AD100796E00 /* ImportJSONOperation.swift */; };
+		FEEB6C6C1E17A85900796E00 /* WebServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEB6C6B1E17A85900796E00 /* WebServer.swift */; };
+		FEEB6C6E1E19DA5300796E00 /* Path+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEB6C6D1E19DA5300796E00 /* Path+Helpers.swift */; };
+		FEEB6C701E19E39300796E00 /* Stash.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEB6C6F1E19E39300796E00 /* Stash.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE0DF5091E059B8600A4CA36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE0DF4EF1E059B8600A4CA36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE0DF4F61E059B8600A4CA36;
+			remoteInfo = Stash;
+		};
+		FE0DF5141E059B8600A4CA36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE0DF4EF1E059B8600A4CA36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE0DF4F61E059B8600A4CA36;
+			remoteInfo = Stash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03A36A82488981D386E97DAF /* Pods-StashUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StashUITests/Pods-StashUITests.release.xcconfig"; sourceTree = "<group>"; };
+		31B37FB602D81ADF89A5C411 /* Pods_StashUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StashUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E4714B0939C55723717A59D /* Pods-Stash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stash/Pods-Stash.debug.xcconfig"; sourceTree = "<group>"; };
+		6C610FDAD2883693B9C7A10B /* Pods-StashUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StashUITests/Pods-StashUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		765E7C3EEEB74ADA96AE171C /* Pods-Stash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stash.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stash/Pods-Stash.release.xcconfig"; sourceTree = "<group>"; };
+		D43A8DC8A605D97ADC46D22F /* Pods-StashTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StashTests/Pods-StashTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D521A19358D091F8B6EDA8D9 /* Pods-StashTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StashTests/Pods-StashTests.release.xcconfig"; sourceTree = "<group>"; };
+		F95167C86952D8CBBD1491ED /* Pods_Stash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE0DF4F71E059B8600A4CA36 /* Stash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE0DF4FA1E059B8600A4CA36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE0DF4FE1E059B8600A4CA36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE0DF5011E059B8600A4CA36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE0DF5031E059B8600A4CA36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE0DF5081E059B8600A4CA36 /* StashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE0DF50C1E059B8600A4CA36 /* StashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashTests.swift; sourceTree = "<group>"; };
+		FE0DF50E1E059B8600A4CA36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE0DF5131E059B8600A4CA36 /* StashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE0DF5171E059B8600A4CA36 /* StashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashUITests.swift; sourceTree = "<group>"; };
+		FE0DF5191E059B8600A4CA36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE0DF5291E05A46B00A4CA36 /* FileTreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileTreeNode.swift; path = Models/FileTreeNode.swift; sourceTree = "<group>"; };
+		FE0DF5301E05FA5400A4CA36 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainWindowController.swift; path = Controllers/MainWindowController.swift; sourceTree = "<group>"; };
+		FE2374921E11ECE100864FB6 /* InputStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InputStackView.swift; path = Views/InputStackView.swift; sourceTree = "<group>"; };
+		FE2BE2E91E1322D90026EAB0 /* NSTextField+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSTextField+Helpers.swift"; path = "Helpers/NSTextField+Helpers.swift"; sourceTree = "<group>"; };
+		FE2EBF6F1E150D4200EA4FB3 /* SceneTableCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneTableCellView.swift; path = Views/Cells/SceneTableCellView.swift; sourceTree = "<group>"; };
+		FE2EBF711E150D5E00EA4FB3 /* SceneTableCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SceneTableCellView.xib; path = Views/Cells/SceneTableCellView.xib; sourceTree = "<group>"; };
+		FE2EBF731E151EFA00EA4FB3 /* FFMPEG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FFMPEG.swift; path = Managers/FFMPEG.swift; sourceTree = "<group>"; };
+		FE37419D1E06F4CE0085EA01 /* MainContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainContainerViewController.swift; path = Controllers/MainContainerViewController.swift; sourceTree = "<group>"; };
+		FE37419F1E0700400085EA01 /* DirectoryOutlineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DirectoryOutlineViewController.swift; path = Controllers/DirectoryOutlineViewController.swift; sourceTree = "<group>"; };
+		FE3741A11E070AA70085EA01 /* EditMetadataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditMetadataViewController.swift; path = Controllers/EditMetadataViewController.swift; sourceTree = "<group>"; };
+		FE3741A31E0760DF0085EA01 /* RefreshProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RefreshProgressViewController.swift; path = Controllers/RefreshProgressViewController.swift; sourceTree = "<group>"; };
+		FE45BB8E1E11927800F011D4 /* SaveJSONOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SaveJSONOperation.swift; path = Operations/SaveJSONOperation.swift; sourceTree = "<group>"; };
+		FE45BB901E11CC1700F011D4 /* PerformersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PerformersViewController.swift; path = Controllers/PerformersViewController.swift; sourceTree = "<group>"; };
+		FE45BB951E11DA9300F011D4 /* PerformerCollectionViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PerformerCollectionViewItem.swift; path = Views/Cells/PerformerCollectionViewItem.swift; sourceTree = "<group>"; };
+		FE45BB961E11DA9300F011D4 /* PerformerCollectionViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PerformerCollectionViewItem.xib; path = Views/Cells/PerformerCollectionViewItem.xib; sourceTree = "<group>"; };
+		FE45BB991E11E61200F011D4 /* PerformerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PerformerViewController.swift; path = Controllers/PerformerViewController.swift; sourceTree = "<group>"; };
+		FE4CA4731E0602920031275C /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Database.swift; path = Managers/Database.swift; sourceTree = "<group>"; };
+		FE57EC004BC3CB2CE221F5B9 /* Pods_StashTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StashTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE70B1CD1E0AFD1500639003 /* WrappingTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WrappingTextField.swift; path = Views/WrappingTextField.swift; sourceTree = "<group>"; };
+		FE70B1CF1E0AFE8200639003 /* WrappingTokenField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WrappingTokenField.swift; path = Views/WrappingTokenField.swift; sourceTree = "<group>"; };
+		FE88576A1E0B1B0400AF77ED /* JSON+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "JSON+Helpers.swift"; path = "Helpers/JSON+Helpers.swift"; sourceTree = "<group>"; };
+		FED89E661E0B353E00B2EE19 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = Controllers/SearchViewController.swift; sourceTree = "<group>"; };
+		FED89E691E0B408400B2EE19 /* ScanOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScanOperation.swift; path = Operations/ScanOperation.swift; sourceTree = "<group>"; };
+		FED89E751E0B657C00B2EE19 /* StashModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StashModel.xcdatamodel; sourceTree = "<group>"; };
+		FEEB6C691E162AD100796E00 /* ImportJSONOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImportJSONOperation.swift; path = Operations/ImportJSONOperation.swift; sourceTree = "<group>"; };
+		FEEB6C6B1E17A85900796E00 /* WebServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebServer.swift; path = Managers/WebServer.swift; sourceTree = "<group>"; };
+		FEEB6C6D1E19DA5300796E00 /* Path+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Path+Helpers.swift"; path = "Helpers/Path+Helpers.swift"; sourceTree = "<group>"; };
+		FEEB6C6F1E19E39300796E00 /* Stash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stash.swift; path = Managers/Stash.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE0DF4F41E059B8600A4CA36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				077839153F8861C4ED2DB01E /* Pods_Stash.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0DF5051E059B8600A4CA36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ED0D806211DCEB3BE7B5A01 /* Pods_StashTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0DF5101E059B8600A4CA36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3F22E9BD460C38269D389FB /* Pods_StashUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000532F7D99E2BF80D1306EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F95167C86952D8CBBD1491ED /* Pods_Stash.framework */,
+				FE57EC004BC3CB2CE221F5B9 /* Pods_StashTests.framework */,
+				31B37FB602D81ADF89A5C411 /* Pods_StashUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB44243ACF05C20B90DD5854 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E4714B0939C55723717A59D /* Pods-Stash.debug.xcconfig */,
+				765E7C3EEEB74ADA96AE171C /* Pods-Stash.release.xcconfig */,
+				D43A8DC8A605D97ADC46D22F /* Pods-StashTests.debug.xcconfig */,
+				D521A19358D091F8B6EDA8D9 /* Pods-StashTests.release.xcconfig */,
+				6C610FDAD2883693B9C7A10B /* Pods-StashUITests.debug.xcconfig */,
+				03A36A82488981D386E97DAF /* Pods-StashUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FE0DF4EE1E059B8600A4CA36 = {
+			isa = PBXGroup;
+			children = (
+				FE0DF4F91E059B8600A4CA36 /* Stash */,
+				FE0DF50B1E059B8600A4CA36 /* StashTests */,
+				FE0DF5161E059B8600A4CA36 /* StashUITests */,
+				FE0DF4F81E059B8600A4CA36 /* Products */,
+				EB44243ACF05C20B90DD5854 /* Pods */,
+				000532F7D99E2BF80D1306EA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FE0DF4F81E059B8600A4CA36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE0DF4F71E059B8600A4CA36 /* Stash.app */,
+				FE0DF5081E059B8600A4CA36 /* StashTests.xctest */,
+				FE0DF5131E059B8600A4CA36 /* StashUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE0DF4F91E059B8600A4CA36 /* Stash */ = {
+			isa = PBXGroup;
+			children = (
+				FED89E681E0B406600B2EE19 /* Operations */,
+				FE8857691E0B1AB700AF77ED /* Helpers */,
+				FE70B1CC1E0AFCE100639003 /* Views */,
+				FE0DF52D1E05E3DA00A4CA36 /* Managers */,
+				FE0DF5281E05A43500A4CA36 /* Models */,
+				FE0DF5251E059B8D00A4CA36 /* Controllers */,
+				FE0DF4FA1E059B8600A4CA36 /* AppDelegate.swift */,
+				FE0DF4FE1E059B8600A4CA36 /* Assets.xcassets */,
+				FE0DF5001E059B8600A4CA36 /* Main.storyboard */,
+				FE0DF5031E059B8600A4CA36 /* Info.plist */,
+				FED89E741E0B657C00B2EE19 /* StashModel.xcdatamodeld */,
+			);
+			path = Stash;
+			sourceTree = "<group>";
+		};
+		FE0DF50B1E059B8600A4CA36 /* StashTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE0DF50C1E059B8600A4CA36 /* StashTests.swift */,
+				FE0DF50E1E059B8600A4CA36 /* Info.plist */,
+			);
+			path = StashTests;
+			sourceTree = "<group>";
+		};
+		FE0DF5161E059B8600A4CA36 /* StashUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FE0DF5171E059B8600A4CA36 /* StashUITests.swift */,
+				FE0DF5191E059B8600A4CA36 /* Info.plist */,
+			);
+			path = StashUITests;
+			sourceTree = "<group>";
+		};
+		FE0DF5251E059B8D00A4CA36 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FE0DF5301E05FA5400A4CA36 /* MainWindowController.swift */,
+				FE37419D1E06F4CE0085EA01 /* MainContainerViewController.swift */,
+				FE37419F1E0700400085EA01 /* DirectoryOutlineViewController.swift */,
+				FE3741A11E070AA70085EA01 /* EditMetadataViewController.swift */,
+				FE3741A31E0760DF0085EA01 /* RefreshProgressViewController.swift */,
+				FED89E661E0B353E00B2EE19 /* SearchViewController.swift */,
+				FE45BB901E11CC1700F011D4 /* PerformersViewController.swift */,
+				FE45BB991E11E61200F011D4 /* PerformerViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		FE0DF5281E05A43500A4CA36 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FE0DF5291E05A46B00A4CA36 /* FileTreeNode.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FE0DF52D1E05E3DA00A4CA36 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FE4CA4731E0602920031275C /* Database.swift */,
+				FE2EBF731E151EFA00EA4FB3 /* FFMPEG.swift */,
+				FEEB6C6B1E17A85900796E00 /* WebServer.swift */,
+				FEEB6C6F1E19E39300796E00 /* Stash.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		FE45BB921E11D77800F011D4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FE45BB951E11DA9300F011D4 /* PerformerCollectionViewItem.swift */,
+				FE45BB961E11DA9300F011D4 /* PerformerCollectionViewItem.xib */,
+				FE2EBF6F1E150D4200EA4FB3 /* SceneTableCellView.swift */,
+				FE2EBF711E150D5E00EA4FB3 /* SceneTableCellView.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		FE70B1CC1E0AFCE100639003 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FE45BB921E11D77800F011D4 /* Cells */,
+				FE70B1CD1E0AFD1500639003 /* WrappingTextField.swift */,
+				FE70B1CF1E0AFE8200639003 /* WrappingTokenField.swift */,
+				FE2374921E11ECE100864FB6 /* InputStackView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FE8857691E0B1AB700AF77ED /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FE88576A1E0B1B0400AF77ED /* JSON+Helpers.swift */,
+				FEEB6C6D1E19DA5300796E00 /* Path+Helpers.swift */,
+				FE2BE2E91E1322D90026EAB0 /* NSTextField+Helpers.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		FED89E681E0B406600B2EE19 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				FED89E691E0B408400B2EE19 /* ScanOperation.swift */,
+				FE45BB8E1E11927800F011D4 /* SaveJSONOperation.swift */,
+				FEEB6C691E162AD100796E00 /* ImportJSONOperation.swift */,
+			);
+			name = Operations;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE0DF4F61E059B8600A4CA36 /* Stash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE0DF51C1E059B8600A4CA36 /* Build configuration list for PBXNativeTarget "Stash" */;
+			buildPhases = (
+				3B7D0DE4E1B8204BF2E6F19F /* [CP] Check Pods Manifest.lock */,
+				FE0DF4F31E059B8600A4CA36 /* Sources */,
+				FE0DF4F41E059B8600A4CA36 /* Frameworks */,
+				FE0DF4F51E059B8600A4CA36 /* Resources */,
+				575EEA5A2F5E19FFA13DDDB1 /* [CP] Embed Pods Frameworks */,
+				522A57FEB66DB5A3667F255F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stash;
+			productName = Stash;
+			productReference = FE0DF4F71E059B8600A4CA36 /* Stash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE0DF5071E059B8600A4CA36 /* StashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE0DF51F1E059B8600A4CA36 /* Build configuration list for PBXNativeTarget "StashTests" */;
+			buildPhases = (
+				400D4E99CD9ACBD04A9E41B7 /* [CP] Check Pods Manifest.lock */,
+				FE0DF5041E059B8600A4CA36 /* Sources */,
+				FE0DF5051E059B8600A4CA36 /* Frameworks */,
+				FE0DF5061E059B8600A4CA36 /* Resources */,
+				878EA9C1FCA58F8A301EAA4D /* [CP] Embed Pods Frameworks */,
+				90C4A992389DC86A4633AF43 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE0DF50A1E059B8600A4CA36 /* PBXTargetDependency */,
+			);
+			name = StashTests;
+			productName = StashTests;
+			productReference = FE0DF5081E059B8600A4CA36 /* StashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FE0DF5121E059B8600A4CA36 /* StashUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE0DF5221E059B8600A4CA36 /* Build configuration list for PBXNativeTarget "StashUITests" */;
+			buildPhases = (
+				4C1749F3F592F713D5635F39 /* [CP] Check Pods Manifest.lock */,
+				FE0DF50F1E059B8600A4CA36 /* Sources */,
+				FE0DF5101E059B8600A4CA36 /* Frameworks */,
+				FE0DF5111E059B8600A4CA36 /* Resources */,
+				428B23613059DC90A3D496C0 /* [CP] Embed Pods Frameworks */,
+				AAB780D92FFF4D513D818DE3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE0DF5151E059B8600A4CA36 /* PBXTargetDependency */,
+			);
+			name = StashUITests;
+			productName = StashUITests;
+			productReference = FE0DF5131E059B8600A4CA36 /* StashUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE0DF4EF1E059B8600A4CA36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				TargetAttributes = {
+					FE0DF4F61E059B8600A4CA36 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+					FE0DF5071E059B8600A4CA36 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FE0DF4F61E059B8600A4CA36;
+					};
+					FE0DF5121E059B8600A4CA36 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FE0DF4F61E059B8600A4CA36;
+					};
+				};
+			};
+			buildConfigurationList = FE0DF4F21E059B8600A4CA36 /* Build configuration list for PBXProject "Stash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE0DF4EE1E059B8600A4CA36;
+			productRefGroup = FE0DF4F81E059B8600A4CA36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE0DF4F61E059B8600A4CA36 /* Stash */,
+				FE0DF5071E059B8600A4CA36 /* StashTests */,
+				FE0DF5121E059B8600A4CA36 /* StashUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE0DF4F51E059B8600A4CA36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE2EBF721E150D5E00EA4FB3 /* SceneTableCellView.xib in Resources */,
+				FE0DF4FF1E059B8600A4CA36 /* Assets.xcassets in Resources */,
+				FE45BB981E11DA9300F011D4 /* PerformerCollectionViewItem.xib in Resources */,
+				FE0DF5021E059B8600A4CA36 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0DF5061E059B8600A4CA36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0DF5111E059B8600A4CA36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B7D0DE4E1B8204BF2E6F19F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		400D4E99CD9ACBD04A9E41B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		428B23613059DC90A3D496C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StashUITests/Pods-StashUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C1749F3F592F713D5635F39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		522A57FEB66DB5A3667F255F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stash/Pods-Stash-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		575EEA5A2F5E19FFA13DDDB1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stash/Pods-Stash-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		878EA9C1FCA58F8A301EAA4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StashTests/Pods-StashTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90C4A992389DC86A4633AF43 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StashTests/Pods-StashTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAB780D92FFF4D513D818DE3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StashUITests/Pods-StashUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE0DF4F31E059B8600A4CA36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE45BB9A1E11E61200F011D4 /* PerformerViewController.swift in Sources */,
+				FED89E671E0B353E00B2EE19 /* SearchViewController.swift in Sources */,
+				FE88576B1E0B1B0400AF77ED /* JSON+Helpers.swift in Sources */,
+				FE3741A01E0700400085EA01 /* DirectoryOutlineViewController.swift in Sources */,
+				FED89E6A1E0B408400B2EE19 /* ScanOperation.swift in Sources */,
+				FE45BB971E11DA9300F011D4 /* PerformerCollectionViewItem.swift in Sources */,
+				FE45BB911E11CC1700F011D4 /* PerformersViewController.swift in Sources */,
+				FE37419E1E06F4CE0085EA01 /* MainContainerViewController.swift in Sources */,
+				FE2EBF701E150D4200EA4FB3 /* SceneTableCellView.swift in Sources */,
+				FE70B1CE1E0AFD1500639003 /* WrappingTextField.swift in Sources */,
+				FE0DF4FB1E059B8600A4CA36 /* AppDelegate.swift in Sources */,
+				FE0DF52A1E05A46B00A4CA36 /* FileTreeNode.swift in Sources */,
+				FED89E761E0B657C00B2EE19 /* StashModel.xcdatamodeld in Sources */,
+				FE2374931E11ECE100864FB6 /* InputStackView.swift in Sources */,
+				FE3741A41E0760DF0085EA01 /* RefreshProgressViewController.swift in Sources */,
+				FE70B1D01E0AFE8200639003 /* WrappingTokenField.swift in Sources */,
+				FE2BE2EA1E1322D90026EAB0 /* NSTextField+Helpers.swift in Sources */,
+				FE45BB8F1E11927800F011D4 /* SaveJSONOperation.swift in Sources */,
+				FE2EBF741E151EFA00EA4FB3 /* FFMPEG.swift in Sources */,
+				FEEB6C701E19E39300796E00 /* Stash.swift in Sources */,
+				FE3741A21E070AA70085EA01 /* EditMetadataViewController.swift in Sources */,
+				FEEB6C6E1E19DA5300796E00 /* Path+Helpers.swift in Sources */,
+				FEEB6C6A1E162AD100796E00 /* ImportJSONOperation.swift in Sources */,
+				FE0DF5311E05FA5400A4CA36 /* MainWindowController.swift in Sources */,
+				FE4CA4741E0602920031275C /* Database.swift in Sources */,
+				FEEB6C6C1E17A85900796E00 /* WebServer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0DF5041E059B8600A4CA36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE0DF50D1E059B8600A4CA36 /* StashTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0DF50F1E059B8600A4CA36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE0DF5181E059B8600A4CA36 /* StashUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE0DF50A1E059B8600A4CA36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE0DF4F61E059B8600A4CA36 /* Stash */;
+			targetProxy = FE0DF5091E059B8600A4CA36 /* PBXContainerItemProxy */;
+		};
+		FE0DF5151E059B8600A4CA36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE0DF4F61E059B8600A4CA36 /* Stash */;
+			targetProxy = FE0DF5141E059B8600A4CA36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FE0DF5001E059B8600A4CA36 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE0DF5011E059B8600A4CA36 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE0DF51A1E059B8600A4CA36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FE0DF51B1E059B8600A4CA36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		FE0DF51D1E059B8600A4CA36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E4714B0939C55723717A59D /* Pods-Stash.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Stash/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stashproject.Stash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FE0DF51E1E059B8600A4CA36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 765E7C3EEEB74ADA96AE171C /* Pods-Stash.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Stash/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stashproject.Stash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FE0DF5201E059B8600A4CA36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D43A8DC8A605D97ADC46D22F /* Pods-StashTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StashTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stashproject.StashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stash.app/Contents/MacOS/Stash";
+			};
+			name = Debug;
+		};
+		FE0DF5211E059B8600A4CA36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D521A19358D091F8B6EDA8D9 /* Pods-StashTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StashTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stashproject.StashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stash.app/Contents/MacOS/Stash";
+			};
+			name = Release;
+		};
+		FE0DF5231E059B8600A4CA36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C610FDAD2883693B9C7A10B /* Pods-StashUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StashUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stashproject.StashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Stash;
+			};
+			name = Debug;
+		};
+		FE0DF5241E059B8600A4CA36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03A36A82488981D386E97DAF /* Pods-StashUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StashUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stashproject.StashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Stash;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE0DF4F21E059B8600A4CA36 /* Build configuration list for PBXProject "Stash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE0DF51A1E059B8600A4CA36 /* Debug */,
+				FE0DF51B1E059B8600A4CA36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE0DF51C1E059B8600A4CA36 /* Build configuration list for PBXNativeTarget "Stash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE0DF51D1E059B8600A4CA36 /* Debug */,
+				FE0DF51E1E059B8600A4CA36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE0DF51F1E059B8600A4CA36 /* Build configuration list for PBXNativeTarget "StashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE0DF5201E059B8600A4CA36 /* Debug */,
+				FE0DF5211E059B8600A4CA36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE0DF5221E059B8600A4CA36 /* Build configuration list for PBXNativeTarget "StashUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE0DF5231E059B8600A4CA36 /* Debug */,
+				FE0DF5241E059B8600A4CA36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FED89E741E0B657C00B2EE19 /* StashModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FED89E751E0B657C00B2EE19 /* StashModel.xcdatamodel */,
+			);
+			currentVersion = FED89E751E0B657C00B2EE19 /* StashModel.xcdatamodel */;
+			path = StashModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FE0DF4EF1E059B8600A4CA36 /* Project object */;
+}
